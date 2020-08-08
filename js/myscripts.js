@@ -50,47 +50,63 @@ function prevSlide() {
     }
 }
 
+function showHome() {
+    document.getElementById("screenhead1").classList.replace("hide-slide", "show-slide");
+    document.getElementById("screenhead2").classList.replace("show-slide", "hide-slide");
+    document.getElementById("screenhead3").classList.replace("show-slide", "hide-slide");
+    document.getElementById("screenhead4").classList.replace("show-slide", "hide-slide");
+    document.getElementById("screenbot1").classList.replace("hide-slide", "show-slide2");
+    document.getElementById("screenbot2").classList.replace("show-slide2", "hide-slide");
+    document.getElementById("screenbot3").classList.replace("show-slide2", "hide-slide");
+    document.getElementById("screenbot4").classList.replace("show-slide2", "hide-slide");
+}
+
+function showMusic() {
+    document.getElementById("screenhead1").classList.replace("show-slide", "hide-slide");
+    document.getElementById("screenhead2").classList.replace("hide-slide", "show-slide");
+    document.getElementById("screenhead3").classList.replace("show-slide", "hide-slide");
+    document.getElementById("screenhead4").classList.replace("show-slide", "hide-slide");
+    document.getElementById("screenbot1").classList.replace("show-slide2", "hide-slide");
+    document.getElementById("screenbot2").classList.replace("hide-slide", "show-slide2");
+    document.getElementById("screenbot3").classList.replace("show-slide2", "hide-slide");
+    document.getElementById("screenbot4").classList.replace("show-slide2", "hide-slide");
+}
+
+function showCoding() {
+    document.getElementById("screenhead1").classList.replace("show-slide", "hide-slide");
+    document.getElementById("screenhead2").classList.replace("show-slide", "hide-slide");
+    document.getElementById("screenhead3").classList.replace("hide-slide", "show-slide");
+    document.getElementById("screenhead4").classList.replace("show-slide", "hide-slide");
+    document.getElementById("screenbot1").classList.replace("show-slide2", "hide-slide");
+    document.getElementById("screenbot2").classList.replace("show-slide2", "hide-slide");
+    document.getElementById("screenbot3").classList.replace("hide-slide", "show-slide2");
+    document.getElementById("screenbot4").classList.replace("show-slide2", "hide-slide");
+}
+
+function showHola() {
+    document.getElementById("screenhead1").classList.replace("show-slide", "hide-slide");
+    document.getElementById("screenhead2").classList.replace("show-slide", "hide-slide");
+    document.getElementById("screenhead3").classList.replace("show-slide", "hide-slide");
+    document.getElementById("screenhead4").classList.replace("hide-slide", "show-slide");
+    document.getElementById("screenbot1").classList.replace("show-slide2", "hide-slide");
+    document.getElementById("screenbot2").classList.replace("show-slide2", "hide-slide");
+    document.getElementById("screenbot3").classList.replace("show-slide2", "hide-slide");
+    document.getElementById("screenbot4").classList.replace("hide-slide", "show-slide2");
+}
+
 function slideSelect() {
     switch(currentSlide) {
         case 1:
-            document.getElementById("screenhead1").classList.replace("hide-slide", "show-slide");
-            document.getElementById("screenhead2").classList.replace("show-slide", "hide-slide");
-            document.getElementById("screenhead3").classList.replace("show-slide", "hide-slide");
-            document.getElementById("screenhead4").classList.replace("show-slide", "hide-slide");
-            document.getElementById("screenbot1").classList.replace("hide-slide", "show-slide2");
-            document.getElementById("screenbot2").classList.replace("show-slide2", "hide-slide");
-            document.getElementById("screenbot3").classList.replace("show-slide2", "hide-slide");
-            document.getElementById("screenbot4").classList.replace("show-slide2", "hide-slide");
+            showHome();
             break;
         case 2:
-            document.getElementById("screenhead1").classList.replace("show-slide", "hide-slide");
-            document.getElementById("screenhead2").classList.replace("hide-slide", "show-slide");
-            document.getElementById("screenhead3").classList.replace("show-slide", "hide-slide");
-            document.getElementById("screenhead4").classList.replace("show-slide", "hide-slide");
-            document.getElementById("screenbot1").classList.replace("show-slide2", "hide-slide");
-            document.getElementById("screenbot2").classList.replace("hide-slide", "show-slide2");
-            document.getElementById("screenbot3").classList.replace("show-slide2", "hide-slide");
-            document.getElementById("screenbot4").classList.replace("show-slide2", "hide-slide");
+            showMusic();
             break;
         case 3:
-            document.getElementById("screenhead1").classList.replace("show-slide", "hide-slide");
-            document.getElementById("screenhead2").classList.replace("show-slide", "hide-slide");
-            document.getElementById("screenhead3").classList.replace("hide-slide", "show-slide");
-            document.getElementById("screenhead4").classList.replace("show-slide", "hide-slide");
-            document.getElementById("screenbot1").classList.replace("show-slide2", "hide-slide");
-            document.getElementById("screenbot2").classList.replace("show-slide2", "hide-slide");
-            document.getElementById("screenbot3").classList.replace("hide-slide", "show-slide2");
-            document.getElementById("screenbot4").classList.replace("show-slide2", "hide-slide");
+            showCoding();
             break;
         case 4:
-            document.getElementById("screenhead1").classList.replace("show-slide", "hide-slide");
-            document.getElementById("screenhead2").classList.replace("show-slide", "hide-slide");
-            document.getElementById("screenhead3").classList.replace("show-slide", "hide-slide");
-            document.getElementById("screenhead4").classList.replace("hide-slide", "show-slide");
-            document.getElementById("screenbot1").classList.replace("show-slide2", "hide-slide");
-            document.getElementById("screenbot2").classList.replace("show-slide2", "hide-slide");
-            document.getElementById("screenbot3").classList.replace("show-slide2", "hide-slide");
-            document.getElementById("screenbot4").classList.replace("hide-slide", "show-slide2");
+            showHola();
             break;
     }
 }
