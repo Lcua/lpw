@@ -4,6 +4,12 @@ h1 {
     color: white;
     margin: 0;
     text-shadow: 2px 2px #fd4e18, -2px -2px #55fcfd;
+    padding: 0;
+    text-align: center;
+}
+
+.h1link {
+    text-decoration: none;
 }
 
 h2 {
@@ -11,6 +17,7 @@ h2 {
     color: white;
     font-size: 50px;
     padding: 0;
+    text-align: center;
 }
 
 p {
@@ -37,6 +44,10 @@ p {
 
 #screenhead3 {
     background-image: url("img/code.jpg");
+}
+
+#screenhead4 {
+    background-image: linear-gradient(to bottom right, #ff8533, #6699ff);
 }
 
 .screenx {
@@ -81,9 +92,28 @@ html {
     align-items: center;
 }
 
+.show-slide2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .screenbotx {
-    min-height: 100vh;
-    background-color: gray;
+    min-height: 98vh;
+    border: 1vh solid white;
+}
+
+#screenbot1, #screenbot3 {
+    background-image: linear-gradient(to bottom right, #ff8533, #6699ff);
+}
+
+#screenbot2 {
+    background-image: linear-gradient(to bottom right, #00ff00, #1a75ff);
+}
+
+#screenbot4 {
+    background-image: linear-gradient(to bottom right, #b3b3b3, #006666);
 }
 
 .morelink {
@@ -94,4 +124,6 @@ html {
     color: white;
     font-size: 40px;
 }
+
+
 
