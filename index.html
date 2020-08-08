@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <header>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <title>Luca's Personal Website</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-    </header>
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+        <script src="js/myscripts.js"></script>
+    </head>
     <body>
-        <h1>This is an h1 heading</h1>
-        <h2>This is an h2 heading</h2>
+        <div id="slide-container">
+            <a id="prev" onclick="prevSlide()">&#10094;</a>
+            <div class="screenheadx show-slide" id = "screenhead1">
+                <div class="screenx screen1">
+                    <h1>Welcome to my Homepage</h1>
+                    <h2>My name is Luca Helmke, and here you can find everything I do</h2>
+                </div>
+            </div>
+            
+            
+            
+            <div class="screenheadx hide-slide" id = "screenhead2">
+                <div class="screenx screen2">
+                    <h1>Music</h1>
+                    <h2>Lorem ipsum</h2>
+                    <a class="morelink" href="#test1">Read more</a>
+                </div>
+            </div>
+            <div class="screenbotx hide-slide" id="screenbot2">
+                <p id="test1">This is just a test</p>
+            </div>
+            
+            
+            
+            
+            <div class="screenheadx hide-slide" id = "screenhead3">
+                <div class="screenx screen3">
+                    <h1>Coding</h1>
+                    <h2>Lorem ipsum</h2>
+                    <a class="morelink" href="#test2">Read more</a>
+                </div>
+            </div>
+            <div class="screenbotx hide-slide" id="screenbot3">
+                <p id="test2">This is just a test</p>
+            </div>
+
+
+
+            <a id="next" onclick="nextSlide()">&#10095;</a>
+        </div>
     </body>
 </html>
