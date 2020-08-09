@@ -1,5 +1,6 @@
 h1 {
-    font-family: 'Permanent Marker', cursive;
+    /* font-family: 'Permanent Marker', cursive; */
+    font-family: "Rowdies";
     font-size: 100px;
     color: white;
     margin: 0;
@@ -25,7 +26,8 @@ h2 {
 }
 
 p {
-    font-family: "Ubuntu";
+    /* font-family: "Ubuntu"; */
+    font-family: "Montserrat";
     color: white;
     font-size: 30px;
 }
@@ -132,9 +134,11 @@ html {
     position: absolute;
     bottom: 0;
     padding-bottom: 20px;
-    font-family: 'Caveat', cursive;
+    /* font-family: 'Caveat', cursive; */
+    font-family: "Montserrat";
     color: white;
-    font-size: 40px;
+    /* font-size: 40px; */
+    font-size: 30px;
 }
 
 .slide-container {
@@ -171,9 +175,9 @@ audio {
     -moz-transition:all 0.3s linear;
     -o-transition:all 0.3s linear;
     transition:all 0.3s linear;
-    -moz-box-shadow: 2px 2px 4px 0px #006773;
-    -webkit-box-shadow:  2px 2px 4px 0px #006773;
-    box-shadow: 2px 2px 4px 0px #006773;
+    -moz-box-shadow: 2px 2px 4px 0px #717171;
+    -webkit-box-shadow:  2px 2px 4px 0px #717171;
+    box-shadow: 2px 2px 4px 0px #717171;
     -moz-border-radius:7px 7px 7px 7px ;
     -webkit-border-radius:7px 7px 7px 7px ;
     border-radius:7px 7px 7px 7px ;
@@ -183,9 +187,9 @@ audio {
 
 img {
     width: 100%;
-    -moz-box-shadow: 2px 2px 4px 0px #006773;
-    -webkit-box-shadow:  2px 2px 4px 0px #006773;
-    box-shadow: 2px 2px 4px 0px #006773;
+    -moz-box-shadow: 2px 2px 4px 0px #717171;
+    -webkit-box-shadow:  2px 2px 4px 0px #717171;
+    box-shadow: 2px 2px 4px 0px #717171;
     -moz-border-radius:7px 7px 7px 7px ;
     -webkit-border-radius:7px 7px 7px 7px ;
     border-radius:7px 7px 7px 7px ;
