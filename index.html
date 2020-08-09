@@ -6,20 +6,39 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <script src="js/myscripts.js"></script>
     </head>
     <body>
         <div id="slide-container">
+            <div class="dots" style="text-align:center">
+                <span class="dot active" id="dot1" onclick="dotSelect(1)"></span>
+                <span class="dot" id="dot2" onclick="dotSelect(2)"></span>
+                <span class="dot" id="dot3" onclick="dotSelect(3)"></span>
+                <span class="dot" id="dot4" onclick="dotSelect(4)"></span>
+            </div>
             <a id="prev" onclick="prevSlide()">&#10094;</a>
             <div class="screenheadx show-slide" id = "screenhead1">
                 <div class="screenx screen1">
                     <a class="h1link" href="#test3"><h1>Welcome to my Homepage</h1></a>
-                    <h2>My name is Luca Helmke, and here you can find everything I do</h2>
+                    <h2 class="sub2">My name is Luca Helmke, and here you can find everything I do</h2>
                     <a class="morelink" href="#test3">Read more</a>
                 </div>
             </div>
             <div class="screenbotx show-slide2" id="screenbot1">
-                <h1 id="test3">This is a temporal heading</h1>
+                <div class="slide-container">
+                    <div class="left">
+                        <h2 id="test3" class="bothead">Bio</h2>
+                        <p>After leaving school, I learned a number of very valuable skills. I followed my passion in music and started recording my own. I also learned to code. Starting with basic HTML, CSS and JavaScript, I soon moved on to other languages and Frameworks, such as PHP, C#, Java, React, Django and others.</p>
+                        <p>I got my first relevant work experience at <a class="outlink" href="https://www.cuckoo-coding.com/en">Cuckoo Coding</a> in Hanover.
+                        They gave me a chance to prove my html, css, javascript and php skills, even without formal training.
+                        Later on I got to work on the <a class="outlink" href="https://cuckoo-coding.com/hub/en/">Cuckoo Coder Tech Hub</a> as Project Manager.
+                        Currently I am the project lead of an unnamed project, managing a talented team of developers.</p>
+                    </div>
+                    <div class="right">
+                        <a href="https://www.cuckoo-coding.com/en/"><img id="cuckoo-logo" src="img/cuckoo_square(1).png"></a>
+                    </div>
+                </div>>
             </div>
             
             
@@ -84,8 +103,7 @@
             
             <div class="screenheadx hide-slide" id = "screenhead3">
                 <div class="screenx screen3">
-                    <a class="h1link" href="#test2"><h1>Coding</h1></a>
-                    <h2>Lorem ipsum</h2>
+                    <a class="h1link" href="#test2"><h1>Projects</h1></a>
                     <a class="morelink" href="#test2">Read more</a>
                 </div>
             </div>

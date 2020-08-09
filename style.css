@@ -13,15 +13,19 @@ h1 {
 }
 
 h2 {
-    font-family: 'Caveat', cursive;
+    font-family: "Ubuntu";
     color: white;
     font-size: 50px;
     padding: 0;
     text-align: center;
 }
 
-p {
+.sub2 {
     font-family: 'Caveat', cursive;
+}
+
+p {
+    font-family: "Ubuntu";
     color: white;
     font-size: 30px;
 }
@@ -173,6 +177,8 @@ audio {
     -moz-border-radius:7px 7px 7px 7px ;
     -webkit-border-radius:7px 7px 7px 7px ;
     border-radius:7px 7px 7px 7px ;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 img {
@@ -185,19 +191,65 @@ img {
     border-radius:7px 7px 7px 7px ;
 }
 
-#next, #prev {
+#next, #prev, .outlink, #cuckoo-logo {
     -webkit-transition:all 0.3s linear;
     -moz-transition:all 0.3s linear;
     -o-transition:all 0.3s linear;
     transition:all 0.3s linear;
 }
 
-#next:hover, #prev:hover {
+#next:hover, #prev:hover, .outlink:hover, #cuckoo-logo:hover {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     transform: scale(1.1);
 }
 
+.outlink:hover {
+    text-decoration: undeline;
+    font-size: 33px;
+}
+
 .bothead {
     text-decoration: underline;
 }
+
+#cuckoo-logo {
+    margin-top: 200px;
+}
+
+.outlink {
+    text-decoration: none;
+    color: #ffcccc;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #717171;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+}
+
+.dots {
+    position: fixed;
+    top: 25px;
+    left: 48vw;
+    display: flex;
+}
+  
+.active, .dot:hover {
+    background-color: #bbb;
+}
+
+ /* Hide scrollbar for Chrome, Safari and Opera */
+ html::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  } 
