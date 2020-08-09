@@ -83,7 +83,7 @@ html {
 }
 
 .hide-slide {
-    display: none;
+    display: none!important;
 }
 
 .show-slide {
@@ -99,18 +99,26 @@ html {
     align-items: center;
 }
 
+.show-slide3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .screenbotx {
     min-height: 98vh;
     border: 1vh solid white;
+    display: flex;
+    flex-direction: column;
 }
 
-#screenbot1, #screenbot3 {
+#screenbot1, #screenbot2, #screenbot3 {
     background-image: linear-gradient(to bottom right, #ff8533, #6699ff);
 }
 
-#screenbot2 {
+/* #screenbot2 {
     background-image: linear-gradient(to bottom right, #00ff00, #1a75ff);
-}
+} */
 
 #screenbot4 {
     background-image: linear-gradient(to bottom right, #b3b3b3, #006666);
@@ -125,5 +133,71 @@ html {
     font-size: 40px;
 }
 
+.slide-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 98vw;
+}
 
+.left, .right, .middle {
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+}
 
+.left, .right {
+    padding-top: 7%;
+}
+
+audio:hover, audio:focus, audio:active {
+    -webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+    -moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+    box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+audio {
+    -webkit-transition:all 0.3s linear;
+    -moz-transition:all 0.3s linear;
+    -o-transition:all 0.3s linear;
+    transition:all 0.3s linear;
+    -moz-box-shadow: 2px 2px 4px 0px #006773;
+    -webkit-box-shadow:  2px 2px 4px 0px #006773;
+    box-shadow: 2px 2px 4px 0px #006773;
+    -moz-border-radius:7px 7px 7px 7px ;
+    -webkit-border-radius:7px 7px 7px 7px ;
+    border-radius:7px 7px 7px 7px ;
+}
+
+img {
+    width: 100%;
+    -moz-box-shadow: 2px 2px 4px 0px #006773;
+    -webkit-box-shadow:  2px 2px 4px 0px #006773;
+    box-shadow: 2px 2px 4px 0px #006773;
+    -moz-border-radius:7px 7px 7px 7px ;
+    -webkit-border-radius:7px 7px 7px 7px ;
+    border-radius:7px 7px 7px 7px ;
+}
+
+#next, #prev {
+    -webkit-transition:all 0.3s linear;
+    -moz-transition:all 0.3s linear;
+    -o-transition:all 0.3s linear;
+    transition:all 0.3s linear;
+}
+
+#next:hover, #prev:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.bothead {
+    text-decoration: underline;
+}

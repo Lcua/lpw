@@ -56,7 +56,7 @@ function showHome() {
     document.getElementById("screenhead3").classList.replace("show-slide", "hide-slide");
     document.getElementById("screenhead4").classList.replace("show-slide", "hide-slide");
     document.getElementById("screenbot1").classList.replace("hide-slide", "show-slide2");
-    document.getElementById("screenbot2").classList.replace("show-slide2", "hide-slide");
+    document.getElementById("screenbot2").classList.replace("show-slide3", "hide-slide");
     document.getElementById("screenbot3").classList.replace("show-slide2", "hide-slide");
     document.getElementById("screenbot4").classList.replace("show-slide2", "hide-slide");
 }
@@ -67,7 +67,7 @@ function showMusic() {
     document.getElementById("screenhead3").classList.replace("show-slide", "hide-slide");
     document.getElementById("screenhead4").classList.replace("show-slide", "hide-slide");
     document.getElementById("screenbot1").classList.replace("show-slide2", "hide-slide");
-    document.getElementById("screenbot2").classList.replace("hide-slide", "show-slide2");
+    document.getElementById("screenbot2").classList.replace("hide-slide", "show-slide3");
     document.getElementById("screenbot3").classList.replace("show-slide2", "hide-slide");
     document.getElementById("screenbot4").classList.replace("show-slide2", "hide-slide");
 }
@@ -78,7 +78,7 @@ function showCoding() {
     document.getElementById("screenhead3").classList.replace("hide-slide", "show-slide");
     document.getElementById("screenhead4").classList.replace("show-slide", "hide-slide");
     document.getElementById("screenbot1").classList.replace("show-slide2", "hide-slide");
-    document.getElementById("screenbot2").classList.replace("show-slide2", "hide-slide");
+    document.getElementById("screenbot2").classList.replace("show-slide3", "hide-slide");
     document.getElementById("screenbot3").classList.replace("hide-slide", "show-slide2");
     document.getElementById("screenbot4").classList.replace("show-slide2", "hide-slide");
 }
@@ -89,7 +89,7 @@ function showHola() {
     document.getElementById("screenhead3").classList.replace("show-slide", "hide-slide");
     document.getElementById("screenhead4").classList.replace("hide-slide", "show-slide");
     document.getElementById("screenbot1").classList.replace("show-slide2", "hide-slide");
-    document.getElementById("screenbot2").classList.replace("show-slide2", "hide-slide");
+    document.getElementById("screenbot2").classList.replace("show-slide3", "hide-slide");
     document.getElementById("screenbot3").classList.replace("show-slide2", "hide-slide");
     document.getElementById("screenbot4").classList.replace("hide-slide", "show-slide2");
 }
